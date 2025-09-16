@@ -1,0 +1,15 @@
+/* Link Styling */
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
