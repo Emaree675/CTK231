@@ -1,0 +1,46 @@
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: url("a5bg.png") repeat;
+  margin: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 20px 0 10px 0;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;             
+}
+
+ul li a {
+  display: block;
+  background-color: #0066cc;   
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #3399ff;    
+}
+
+
