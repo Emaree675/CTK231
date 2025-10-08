@@ -1,76 +1,125 @@
+/* Global styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: url("a61.jpg") repeat;
+  background-image: url('a62.png');
+  background-repeat: repeat;
+  font-family: Georgia, serif;
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-  grid-gap: 20px;
-}
-
-header {
-  grid-area: header;
-  text-align: center;
-}
-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
-nav {
-  grid-area: nav;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  padding: 10px 15px;
-  transition: 0.3s ease;
-}
-nav a:hover {
-  background: url("a62.png") repeat;
-  color: white;
-}
-
-main {
-  grid-area: main;
-}
-main a {
-  text-decoration: none;
-  color: darkblue;
-  transition: 0.3s ease;
-}
-main a:hover {
-  color: red;
-  background: url("a62.png") repeat;
-  padding: 2px 4px;
-}
-
-footer {
-  grid-area: footer;
-  text-align: center;
-  font-size: 0.9em;
-  color: #555;
+  width: 900px;
+  margin: 20px auto;
+  background-color: white;
+  border: 2px solid black;
   padding: 10px;
-  border-top: 1px solid #ccc;
 }
-```
+
+/* Header */
+header h1 {
+  background-color: black;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Layout */
+.main-content {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* Navigation */
+nav {
+  width: 180px;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li a {
+  display: block;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  border: 2px solid red;
+  text-align: center;
+}
+
+nav li a:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+/* Content section */
+.content {
+  flex: 1;
+}
+
+.content h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.top-text p {
+  font-family: Georgia, serif;
+  text-align: justify;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Image and side paragraph */
+.image-and-paragraphs {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.image-and-paragraphs img {
+  border: 5px solid black;
+  width: 300px;
+}
+
+.image-and-paragraphs p {
+  font-weight: bold;
+  max-width: 300px;
+}
+
+/* Links in main content */
+.text a {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  padding: 10px;
+  margin-top: 20px;
+}
