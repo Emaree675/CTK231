@@ -3,59 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <title>Fancy Example</title>
+
+<!-- Fancybox CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
-  
+
+<!-- Carousel CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.css"/>
-
-
 
 <link rel="stylesheet" href="fancy.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+<!-- Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
 
+<!-- Carousel JS -->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.umd.js"></script>
-
 </head>
 
 <body>
-  <div id="wrapper">
-    <h1>Fancy Example</h1>
 
-    <a href="icecream.jpg" data-fancybox="gallery" 
-    data-caption="icecream">
+<h1>Fancy Example</h1>
+
+<!-- Gallery Images -->
+<a href="icecream.jpg" data-fancybox="gallery" data-caption="icecream">
   <img src="icecream_thumb.jpg" />
-</a> 
+</a>
 
-<a href="patch.jpg" data-fancybox="gallery" 
-data-caption="patch">
+<a href="patch.jpg" data-fancybox="gallery" data-caption="patch">
   <img src="patch_thumb.jpg" />
+</a>
 
-  <a href="water.jpg" data-fancybox="gallery" 
-data-caption="water">
+<a href="water.jpg" data-fancybox="gallery" data-caption="water">
   <img src="water_thumb.jpg" />
 </a>
 
+<!-- Carousel -->
 <div class="f-carousel" id="myCarousel">
-  <div class="f-carousel__slide"><img src="icecream.jpg" 
-    alt="icecream"></div>
-  <div class="f-carousel__slide"><img src="patch.jpg"
-    alt="patch"></div>
-  <div class="f-carousel__slide"><img src="water.jpg"></div>
+  <div class="f-carousel__slide">
+    <img src="icecream.jpg" alt="icecream">
   </div>
+  <div class="f-carousel__slide">
+    <img src="patch.jpg" alt="patch">
+  </div>
+  <div class="f-carousel__slide">
+    <img src="water.jpg" alt="water">
+  </div>
+</div>
 
-
-  <script>
-Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-});
-
-const container = document.getElementById("myCarousel");
-const options = {
-  // Your custom options
-};
-
-Carousel(container, options).init();
 <script>
+  // Fancybox setup
+  Fancybox.bind("[data-fancybox]", {
+    // custom options here
+  });
+
+  // Carousel setup
+  const container = document.getElementById("myCarousel");
+  const options = {
+    // custom options here
+  };
+
+  new Carousel(container, options);
+</script>
 
 </body>
 </html>
