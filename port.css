@@ -35,7 +35,6 @@
   justify-content: center;
   margin-bottom: 40px;
 }
-
 . {
   background: #cfcfcf;
   display: flex;
@@ -94,3 +93,49 @@
   font-size: 18px;
   margin-top: 40px;
 }
+
+/* ABOUT PAGE ADDITIONS */
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+}
+
+.about-photo {
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  margin-bottom: 20px;
+}
+
+/* Spotify Link Styling */
+.music-links {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.music-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.music-links a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 24px;
+  color: #1DB954;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.music-links a:hover {
+  color: #14863c;
+}
+
+.music-links i {
+  margin-right: 8px;
+}
+
+
